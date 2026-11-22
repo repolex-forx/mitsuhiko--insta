@@ -1,0 +1,11 @@
+{
+  "org": "mitsuhiko",
+  "repo": "insta",
+  "versions": [
+    {
+      "commit": "7f23d2e4684a789a85c50503004fb38a23c9ea58",
+      "tag": "1.48.0",
+      "parsed_at": "2026-11-22T13:02:19.750514+00:00"
+    }
+  ]
+}
