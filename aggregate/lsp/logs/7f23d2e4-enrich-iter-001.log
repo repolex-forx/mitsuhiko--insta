@@ -1,0 +1,36 @@
+[2026-11-22T12:38:26Z] === ENRICH ITERATION 1 START | repo=mitsuhiko/insta sha=7f23d2e4 ===
+[2026-11-22T12:38:26Z] [iter=1] PHASE START: enrich repo=mitsuhiko/insta sha=7f23d2e4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7f23d2e4-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7f23d2e4684a789a85c50503004fb38a23c9ea58.nq.gz
+[2026-11-22T12:38:26Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-22T12:38:36Z] [iter=1] AST store loaded triples=771789 load_secs=9 mem_mb=792 MB
+[2026-11-22T12:38:36Z] [iter=1] Step 2: Finding LSP targets mem_mb=792 MB
+[2026-11-22T12:38:37Z] [iter=1] LSP targets found call_sites=8007 imports=216 extends=1 implements=42 secs=1
+[2026-11-22T12:38:38Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=792 MB
+[2026-11-22T12:38:41Z] [iter=1] Position index built positions=51138 nodes_with_types=62382 secs=3 mem_mb=792 MB
+[2026-11-22T12:38:41Z] [iter=1] Step 3: Starting LSP resolution mem_mb=792 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T12:38:41Z] [iter=1] Resolving target type target_type=call_site count=8007
+[2026-11-22T12:39:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=insta/src/content/yaml/mod.rs
+[2026-11-22T12:40:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=2 resolved=338 errors=0 current=insta/src/snapshot.rs
+[2026-11-22T12:40:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=5 resolved=910 errors=0 current=cargo-insta/src/cargo.rs
+[2026-11-22T12:41:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=8 resolved=1461 errors=0 current=insta/tests/test_toml.rs
+[2026-11-22T12:43:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=10 resolved=2394 errors=0 current=insta/src/redaction.rs
+[2026-11-22T12:44:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=13 resolved=2753 errors=0 current=insta/src/glob.rs
+[2026-11-22T12:45:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=16 resolved=3427 errors=0 current=insta/src/content/yaml/vendored/emitter.rs
+[2026-11-22T12:45:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=18 resolved=4078 errors=0 current=cargo-insta/src/inline.rs
+[2026-11-22T12:46:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=20 resolved=4488 errors=0 current=insta/src/env.rs
+[2026-11-22T12:47:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=23 resolved=5102 errors=0 current=cargo-insta/tests/functional/test_runner_fallback.rs
+[2026-11-22T12:47:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=28 resolved=5493 errors=0 current=cargo-insta/tests/functional/nextest_doctest.rs
+[2026-11-22T12:48:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=34 resolved=5891 errors=0 current=insta/tests/test_comparator.rs
+[2026-11-22T12:48:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=40 resolved=6253 errors=0 current=insta/src/content/serialization.rs
+[2026-11-22T12:49:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=45 resolved=6590 errors=0 current=cargo-insta/tests/functional/snapshot_filter.rs
+[2026-11-22T12:49:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=58 resolved=6767 errors=0 current=vscode-insta/src/SnapshotDocumentLinkProvider.ts
+[2026-11-22T12:50:05Z] [iter=1] Target type resolved target_type=call_site resolved=6806 errors=0 secs=684 mem_mb=792 MB
+[2026-11-22T12:50:05Z] [iter=1] Resolving target type target_type=import_statement count=216
+[2026-11-22T12:50:18Z] [iter=1] Target type resolved target_type=import_statement resolved=193 errors=0 secs=13 mem_mb=792 MB
+[2026-11-22T12:50:18Z] [iter=1] Resolving target type target_type=extends_clause count=1
+[2026-11-22T12:50:19Z] [iter=1] Target type resolved target_type=extends_clause resolved=1 errors=0 secs=1 mem_mb=792 MB
+[2026-11-22T12:50:19Z] [iter=1] Resolving target type target_type=implements_clause count=42
+[2026-11-22T12:50:28Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=12.0 files_done=1 resolved=6 errors=0 current=insta/src/content/serialization.rs
+[2026-11-22T12:50:30Z] [iter=1] Target type resolved target_type=implements_clause resolved=42 errors=0 secs=11 mem_mb=792 MB
+[2026-11-22T13:00:26Z] [iter=1] Step 5: Writing final enrichment file triples=78813
+[2026-11-22T13:00:27Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/7f23d2e4684a789a85c50503004fb38a23c9ea58.nq.gz size_kb=1649
+[2026-11-22T13:00:27Z] [iter=1] PHASE END: enrich elapsed_s=1320 elapsed_min=22.0 total_triples=78813
